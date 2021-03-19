@@ -18,18 +18,21 @@ pipeline {
             args '-u root'
         }
     }
+    post {
+        pending {
+            setBuildStatus("Build pending", "PENDING");
+        }
+    }
 
     stages {
         stage('Build') {
             steps {
-                setBuildStatus("Build pending", "PENDING");
                 echo 'Building...'
                 sh 'npm install'
             }
         }
         stage('Test') {
             steps {
-                setBuildStatus("Build succeeded", "SUCCESS");
                 echo 'Testing...'
                 sh 'npm test'
             }
