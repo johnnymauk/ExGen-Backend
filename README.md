@@ -1,2 +1,3 @@
 # ExGen-Backend
-Workout exercises generation tool backend
+Workout exercises generation tool backend...
+added some dots.
