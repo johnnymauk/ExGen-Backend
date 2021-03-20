@@ -22,13 +22,14 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                setBuildStatus("Build starting", "PENDING");
+                setBuildStatus("Building...", "PENDING");
                 echo 'Building...'
                 sh 'npm install'
             }
         }
         stage('Test') {
             steps {
+                setBuildStatus("Testing...", "PENDING");
                 echo 'Testing...'
                 sh 'npm test'
             }
