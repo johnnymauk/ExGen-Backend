@@ -1,5 +1,4 @@
 # ExGen-Backend
 Workout exercises generation tool backend...
 added some dots.
-Even more dots.
-Just for embo. part 61
+Even more dots. 15
